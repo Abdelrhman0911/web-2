@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech School - منصة التعلم التقني</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* إضافة تنسيقات للتدرج في التمرير */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* تحسين التمرير عند الروابط الداخلية */
+        section {
+            scroll-margin-top: 80px;
+        }
+        
+        /* تأثير تدريجي عند الوصول للعنصر */
+        .scroll-fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .scroll-fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Tech School</h1>
+                    <p class="tagline">منصة التعلم التقني باللغة العربية</p>
+                </a>
+            </div>
+            
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="index.html">الرئيسية</a></li>
+                    <li><a href="#masar" class="nav-link">المسارات</a></li>
+                    <li><a href="#experience" class="nav-link">آراء الطلاب</a></li>
+                    <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>انطلق الآن وأظهر إبداعك التقني</h2>
+            <p>أول منصة عربية لتعليم المسارات التقنية بشكل مجاني ومنظم</p>
+            <div class="hero-buttons">
+                <a href="#masar" class="button large nav-link">ابدأ التعلم الآن</a>
+                <a href="#experience" class="button alt large nav-link">آراء الطلاب</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="masar" class="section">
+        <div class="container">
+            <h2 class="section-title scroll-fade-in">المسارات التدريبية</h2>
+            <p class="section-subtitle scroll-fade-in">اختر مسارك التقني وابدأ رحلة التعلم</p>
+            
+            <div class="grid">
+                <!-- بطاقة 1 -->
+                <a href="#" class="card-link scroll-fade-in">
+                    <article class="card">
+                        <div class="badge">
+                            <span class="level">1</span>
+                            <span>مستوى مبتدئ</span>
+                        </div>
+                        <div class="banner">
+                            <div class="banner-overlay"></div>
+                            <div class="course-category">تطوير الويب</div>
+                        </div>
+                        <div class="content">
+                            <h3 class="course-title">مسار تطوير الواجهات الأمامية</h3>
+                            <p class="course-desc">تعلم HTML, CSS, JavaScript لبناء مواقع ويب تفاعلية وجذابة</p>
+                            <div class="meta-line">
+                                <div class="meta-left">
+                                    <div class="avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="instructor">أحمد محمود</div>
+                                </div>
+                                <div class="duration">
+                                    <i class="far fa-clock"></i>
+                                    <span>28 ساعة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                
+                <!-- بطاقة 2 -->
+                <a href="#" class="card-link scroll-fade-in">
+                    <article class="card">
+                        <div class="badge">
+                            <span class="level">2</span>
+                            <span>مستوى متوسط</span>
+                        </div>
+                        <div class="banner">
+                            <div class="banner-overlay"></div>
+                            <div class="course-category">تطوير الويب</div>
+                        </div>
+                        <div class="content">
+                            <h3 class="course-title">مسار تطوير الواجهات الخلفية</h3>
+                            <p class="course-desc">تعلم Node.js وقواعد البيانات لبناء تطبيقات ويب متكاملة</p>
+                            <div class="meta-line">
+                                <div class="meta-left">
+                                    <div class="avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="instructor">سارة خالد</div>
+                                </div>
+                                <div class="duration">
+                                    <i class="far fa-clock"></i>
+                                    <span>36 ساعة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                
+                <!-- بطاقة 3 -->
+                <a href="#" class="card-link scroll-fade-in">
+                    <article class="card">
+                        <div class="badge">
+                            <span class="level">1</span>
+                            <span>مستوى مبتدئ</span>
+                        </div>
+                        <div class="banner">
+                            <div class="banner-overlay"></div>
+                            <div class="course-category">تصميم</div>
+                        </div>
+                        <div class="content">
+                            <h3 class="course-title">مسار UI/UX تصميم تجربة المستخدم</h3>
+                            <p class="course-desc">تعلم تصميم واجهات المستخدم وتجربة المستخدم من الصفر</p>
+                            <div class="meta-line">
+                                <div class="meta-left">
+                                    <div class="avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="instructor">محمد علي</div>
+                                </div>
+                                <div class="duration">
+                                    <i class="far fa-clock"></i>
+                                    <span>24 ساعة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                
+                <!-- بطاقة 4 -->
+                <a href="#" class="card-link scroll-fade-in">
+                    <article class="card">
+                        <div class="badge">
+                            <span class="level">3</span>
+                            <span>مستوى متقدم</span>
+                        </div>
+                        <div class="banner">
+                            <div class="banner-overlay"></div>
+                            <div class="course-category">الذكاء الاصطناعي</div>
+                        </div>
+                        <div class="content">
+                            <h3 class="course-title">مسار الذكاء الاصطناعي</h3>
+                            <p class="course-desc">تعلم أساسيات الذكاء الاصطناعي وتعلم الآلة</p>
+                            <div class="meta-line">
+                                <div class="meta-left">
+                                    <div class="avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="instructor">نورا أحمد</div>
+                                </div>
+                                <div class="duration">
+                                    <i class="far fa-clock"></i>
+                                    <span>42 ساعة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- الكورسات الجديدة - بداية الإضافات -->
+
+                <!-- بطاقة 5 -->
+                <a href="#" class="card-link scroll-fade-in">
+                    <article class="card">
+                        <div class="badge">
+                            <span class="level">1</span>
+                            <span>مستوى مبتدئ</span>
+                        </div>
+                        <div class="banner">
+                            <div class="banner-overlay"></div>
+                            <div class="course-category">تطبيقات الهاتف</div>
+                        </div>
+                        <div class="content">
+                            <h3 class="course-title">مسار تطوير تطبيقات Android</h3>
+                            <p class="course-desc">تعلم Kotlin وAndroid Studio لبناء تطبيقات أندرويد احترافية</p>
+                            <div class="meta-line">
+                                <div class="meta-left">
+                                    <div class="avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="instructor">كريم سامي</div>
+                                </div>
+                                <div class="duration">
+                                    <i class="far fa-clock"></i>
+                                    <span>32 ساعة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- بطاقة 6 -->
+                <a href="#" class="card-link scroll-fade-in">
+                    <article class="card">
+                        <div class="badge">
+                            <span class="level">2</span>
+                            <span>مستوى متوسط</span>
+                        </div>
+                        <div class="banner">
+                            <div class="banner-overlay"></div>
+                            <div class="course-category">تطبيقات الهاتف</div>
+                        </div>
+                        <div class="content">
+                            <h3 class="course-title">مسار تطوير تطبيقات iOS</h3>
+                            <p class="course-desc">تعلم Swift وXcode لبناء تطبيقات آيفون وآيباد مبتكرة</p>
+                            <div class="meta-line">
+                                <div class="meta-left">
+                                    <div class="avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="instructor">لمى حسن</div>
+                                </div>
+                                <div class="duration">
+                                    <i class="far fa-clock"></i>
+                                    <span>38 ساعة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- بطاقة 7 -->
+                <a href="#" class="card-link scroll-fade-in">
+                    <article class="card">
+                        <div class="badge">
+                            <span class="level">2</span>
+                            <span>مستوى متوسط</span>
+                        </div>
+                        <div class="banner">
+                            <div class="banner-overlay"></div>
+                            <div class="course-category">علوم البيانات</div>
+                        </div>
+                        <div class="content">
+                            <h3 class="course-title">مسار علوم البيانات وتحليلها</h3>
+                            <p class="course-desc">تعلم Python, Pandas, وSQL لتحليل البيانات واستخراج الرؤى</p>
+                            <div class="meta-line">
+                                <div class="meta-left">
+                                    <div class="avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="instructor">عمر راشد</div>
+                                </div>
+                                <div class="duration">
+                                    <i class="far fa-clock"></i>
+                                    <span>40 ساعة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- بطاقة 8 -->
+                <a href="#" class="card-link scroll-fade-in">
+                    <article class="card">
+                        <div class="badge">
+                            <span class="level">1</span>
+                            <span>مستوى مبتدئ</span>
+                        </div>
+                        <div class="banner">
+                            <div class="banner-overlay"></div>
+                            <div class="course-category">الأمن السيبراني</div>
+                        </div>
+                        <div class="content">
+                            <h3 class="course-title">مسار أساسيات الأمن السيبراني</h3>
+                            <p class="course-desc">تعلم حماية الأنظمة والشبكات من الهجمات الإلكترونية</p>
+                            <div class="meta-line">
+                                <div class="meta-left">
+                                    <div class="avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="instructor">خالد وائل</div>
+                                </div>
+                                <div class="duration">
+                                    <i class="far fa-clock"></i>
+                                    <span>30 ساعة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- بطاقة 9 -->
+                <a href="#" class="card-link scroll-fade-in">
+                    <article class="card">
+                        <div class="badge">
+                            <span class="level">2</span>
+                            <span>مستوى متوسط</span>
+                        </div>
+                        <div class="banner">
+                            <div class="banner-overlay"></div>
+                            <div class="course-category">تطوير الألعاب</div>
+                        </div>
+                        <div class="content">
+                            <h3 class="course-title">مسار تطوير ألعاب الفيديو</h3>
+                            <p class="course-desc">تعلم Unity وC# لتصميم وتطوير ألعابك الخاصة</p>
+                            <div class="meta-line">
+                                <div class="meta-left">
+                                    <div class="avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="instructor">ياسمين عماد</div>
+                                </div>
+                                <div class="duration">
+                                    <i class="far fa-clock"></i>
+                                    <span>35 ساعة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- بطاقة 10 -->
+                <a href="#" class="card-link scroll-fade-in">
+                    <article class="card">
+                        <div class="badge">
+                            <span class="level">3</span>
+                            <span>مستوى متقدم</span>
+                        </div>
+                        <div class="banner">
+                            <div class="banner-overlay"></div>
+                            <div class="course-category">DevOps</div>
+                        </div>
+                        <div class="content">
+                            <h3 class="course-title">مسار DevOps والحوسبة السحابية</h3>
+                            <p class="course-desc">تعلم Docker, Kubernetes, وAWS لإدارة البنية التحتية</p>
+                            <div class="meta-line">
+                                <div class="meta-left">
+                                    <div class="avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="instructor">نادر جمال</div>
+                                </div>
+                                <div class="duration">
+                                    <i class="far fa-clock"></i>
+                                    <span>45 ساعة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <!-- نهاية الكورسات الجديدة -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title scroll-fade-in">آراء الطلاب في منصتنا</h2>
+            <p class="section-subtitle scroll-fade-in">تجارب حقيقية من طلابنا حول رحلة التعلم</p>
+            
+            <div class="experience">
+                <!-- آراء الطلاب - أول 3 مرئية -->
+                <div class="exp-box visible scroll-fade-in">
+                    <div class="user-info">
+                        <div class="avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h3>علي عبدالمعطي</h3>
+                            <span class="date">منذ أسبوع</span>
+                        </div>
+                    </div>
+                    <p class="content">
+                        بصراحة المنصة فرقت معايا جدًا… كنت تايه ومش عارف أبدأ منين،
+                        لكن الكورسات عندكو مترتبة وواضحة. قدرت أخش عالمجال من غير ما ألف كتير.
+                    </p>
+                </div>
+                
+                <div class="exp-box visible scroll-fade-in">
+                    <div class="user-info">
+                        <div class="avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h3>مي وليد</h3>
+                            <span class="date">منذ 3 أيام</span>
+                        </div>
+                    </div>
+                    <p class="content">
+                        عاجبني جدًا أسلوب الشرح وخفة الدم. حسّيت إني بفهم مش بحفظ.
+                        وفعلاً عملت أول Landing Page بعد أسبوع واحد.
+                    </p>
+                </div>
+                
+                <div class="exp-box visible scroll-fade-in">
+                    <div class="user-info">
+                        <div class="avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h3>يوسف عبدالعزيز</h3>
+                            <span class="date">منذ يومين</span>
+                        </div>
+                    </div>
+                    <p class="content">
+                        كنت فاكر البرمجة صعبة، بس طريقة عرض المحتوى عندكم خلت الموضوع أسهل بكتير.
+                        شكراً بجد يا شباب.
+                    </p>
+                </div>
+                
+                
+            </div>
+            
+        
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title scroll-fade-in">تواصل معنا</h2>
+            <p class="section-subtitle scroll-fade-in">نسعد بسماع رأيك أو استفسارك</p>
+            
+            <div class="contact-content">
+                <div class="contact-info scroll-fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>العنوان</h3>
+                            <p>القاهرة، مصر</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>info@techschool.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>الهاتف</h3>
+                            <p>+20 123 456 7890</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social">
+                        <h3>تابعنا على وسائل التواصل</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form scroll-fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">الاسم</label>
+                            <input type="text" id="name" placeholder="أدخل اسمك" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">الرسالة</label>
+                            <textarea id="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="button large">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Tech School</h2>
+                    <p>منصة التعلم التقني الأولى باللغة العربية</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="links-column">
+                        <h3>المسارات</h3>
+                        <ul>
+                            <li><a href="#masar" class="nav-link">تطوير الويب</a></li>
+                            <li><a href="#masar" class="nav-link">تطوير تطبيقات الهاتف</a></li>
+                            <li><a href="#masar" class="nav-link">تصميم UI/UX</a></li>
+                            <li><a href="#masar" class="nav-link">الذكاء الاصطناعي</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="links-column">
+                        <h3>المنصة</h3>
+                        <ul>
+                            <li><a href="#">عن المنصة</a></li>
+                            <li><a href="#">المدربون</a></li>
+                            <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة &copy; 2023 Tech School</p>
+                <div class="dark-mode-info">
+                    <i class="fas fa-adjust"></i>
+                  
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // دالة للتدرج في التمرير
+        function smoothScrollTo(target) {
+            const element = document.querySelector(target);
+            if (element) {
+                const headerHeight = document.querySelector('#header').offsetHeight;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+                
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        // معالجة الروابط الداخلية
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                smoothScrollTo(targetId);
+            });
+        });
+        
+        // إضافة تأثير ظهور تدريجي للعناصر أثناء التمرير
+        function checkScroll() {
+            const elements = document.querySelectorAll('.scroll-fade-in');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+        
+        // تفعيل تأثير التمرير عند التحميل وعند التمرير
+        window.addEventListener('load', checkScroll);
+        window.addEventListener('scroll', checkScroll);
+        
+        // تطبيق التأثير على العناصر عند تحميل الصفحة
+        document.addEventListener('DOMContentLoaded', function() {
+            checkScroll();
+        });
+        
+        // إصلاح مشكلة الروابط في الفوتر
+        document.querySelectorAll('.footer-links a').forEach(link => {
+            if (link.getAttribute('href') && link.getAttribute('href').startsWith('#')) {
+                link.classList.add('nav-link');
+            }
+        });
+    </script>
+    
+</body>
+</html>
